@@ -1,1 +1,45 @@
 
+/*These are your custom fonts, sizing, and coloring you can select multiple fonts/colors/sizing to disply depending on the HTML element. Elements can include h1, h1, div, span, etc. lower, you'll see how we can get more specific to avoid overlapping styling (example: if we listed "div" by itself for one of these elements, it would override all other coding */
+/*this one will impact the titles (h1 HTML Element) */
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap'); 
+
+h1 {
+    font-family: 'Sedan SC', serif; 
+    font-size: 40px;
+    font-weight: 500;
+    color: #a50baa;
+}
+
+/* This one will impact the subheaders (h2 HTML Element) */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap'); 
+
+h2 {
+    font-family: 'Poetsen One', sans-serif; 
+    font-size: 25px;
+    font-weight: 500;
+    color: #11ca5e;
+}
+
+/* This one will impact the subheaders (h3 HTML Element) */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap'); 
+
+h3 {
+    font-family: 'Poetsen One', sans-serif; 
+    font-size: 18px;
+    font-weight: 500;
+    color: #ca4511;
+}
+/*ok, so those elements are realtively easy because you dont have too much overlap, below you'll see how we avoid the div element */
+
+/* */
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap'); 
+
+/* Using the attribute selector for the data-testid attribute. This is better than referring to the Class, which can change on item change/update */
+div[data-testid="stText"] {
+    font-family: 'Jaro', sans-serif; 
+    font-size: 20px;
+    font-weight: 400;
+    color: #a2ca11;
+}
+
+/*you can also import multiple google fonts within one link and apply them to different styling elements. SO, realistically, you only need one imported google font, I'll show you that with the markdown and write elements. You just have to specify the font you're using in the element styling, since the imported link provides all of that in one shot. Check out the README file for visuals*/
