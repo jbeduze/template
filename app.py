@@ -1,9 +1,13 @@
 import streamlit as st
 
+# Initialize the session state for the CSS
+if 'site_css' not in st.session_state:
+    with open("config/style.css") as css:
+        st.session_state['site_css'] = css.read()
 
-#custom font site wide
-with open( "config/style.css" ) as css:
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+
+# Apply the CSS site-wide
+st.markdown(f'<style>{st.session_state["site_css"]}</style>', unsafe_allow_html=True)
 
 st.title("This is my title")
 
