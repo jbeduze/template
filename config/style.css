@@ -19,13 +19,13 @@ h2 {
     font-family: 'Poetsen One', sans-serif; 
     font-size: 25px;
     font-weight: 500;
-    color: #11ca5e;
+    color: #1d11ca;
 }
 
 
 /* This one will impact the subheaders (h3 HTML Element) */
 h3 {
-    font-family: 'Poetsen One', sans-serif; 
+    font-family: 'Briem Hand', cursive; 
     font-size: 18px;
     font-weight: 500;
     color: #ca4511;
