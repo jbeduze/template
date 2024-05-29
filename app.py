@@ -1,6 +1,7 @@
 import streamlit as st
 from nested_container_template import display_nested_container
 from container_template import display_container
+from widgets import display_widgets
 
 st.set_page_config(
     page_title="Template App",
@@ -14,7 +15,7 @@ if 'site_css' not in st.session_state:
     with open("config/style.css") as css:
         st.session_state['site_css'] = css.read()
 
-tab1, tab2, tab3 = st.tabs(["Main", "customizing", "Containers"])
+tab1, tab2, tab3, tab4 = st.tabs(["Main", "customizing", "Containers", "widgets"])
 
 with tab1:
     # Apply the CSS site-wide
@@ -37,3 +38,6 @@ with tab3:
         display_nested_container()
     with st.expander ("See example of how to use the stylable containers as a part of streamlit_extras", expanded=True):
         display_container()
+
+with tab4:
+    display_widgets()

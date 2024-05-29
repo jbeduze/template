@@ -24,11 +24,11 @@ def display_nested_container():
             key="profile_holder_container",
             css_styles="""
             {
-                box-shadow: 0px 0px 10px #3FED43; /* Applies a shadow 2 pixels to the right and bottom with a blur radius of 6 pixels and a light opacity */            font-family: 'Arial', sans-serif; /* Sets the font to Arial with a fallback to any available sans-serif font */         font-size: 20px; /* Sets the font size to 14 pixels */            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smoothly animates changes to the background color and box-shadow properties over 0.3 seconds */
+                box-shadow: 0px 0px 10px #ed8795; /* Applies a shadow 2 pixels to the right and bottom with a blur radius of 6 pixels and a light opacity */            font-family: 'Arial', sans-serif; /* Sets the font to Arial with a fallback to any available sans-serif font */         font-size: 20px; /* Sets the font size to 14 pixels */            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smoothly animates changes to the background color and box-shadow properties over 0.3 seconds */
                 border: 2px solid #ccc; /* Creates a 2-pixel solid border with a light gray color (#ccc) */
                 border-radius: 10px; /* Rounds the corners of the element with a 15-pixel radius */
-                background-color: #3F9EED; /* Sets the background color to a shade of blue (#3F9EED) */
-                color: #3FED43; /* Sets the text color to a shade of green (#3FED43) */            header-color: #3FED43;
+                background-color: #80bf32; /* Sets the background color to a shade of blue (#3F9EED) */
+                color: #000000; /* Sets the text color to a shade of green (#3FED43) */            header-color: #3FED43;
                 padding: 5px; /* Adds 15 pixels of inner spacing between the content and the border */
                 margin: 8px;
             }
@@ -46,7 +46,7 @@ def display_nested_container():
                                 {
                                     border: 2px solid #ccc; /* Creates a 2-pixel solid border with a light gray color (#ccc) */
                                     border-radius: 5px; /* Rounds the corners of the element with a 15-pixel radius */
-                                    background-color: #3F9EED; /* Sets the background color to a shade of blue (#3F9EED) */
+                                    background-color: #8987ed; /* Sets the background color to a shade of blue (#3F9EED) */
                                     color: #3FED43; /* Sets the text color to a shade of green (#3FED43) */            header-color: #3FED43;
                                     padding: 5px; /* Adds 15 pixels of inner spacing between the content and the border */
                                     margin: 8px;
@@ -94,11 +94,11 @@ def display_nested_container():
                     profile_notes_container()
 
     def stats_holder_container():
-        with stylable_container(
+        with stylable_container( 
             key="stats_holder_container",
             css_styles="""
             {
-                box-shadow: 0px 0px 10px #3FED43; /* Applies a shadow 2 pixels to the right and bottom with a blur radius of 6 pixels and a light opacity */            font-family: 'Arial', sans-serif; /* Sets the font to Arial with a fallback to any available sans-serif font */         font-size: 20px; /* Sets the font size to 14 pixels */            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smoothly animates changes to the background color and box-shadow properties over 0.3 seconds */
+                box-shadow: 0px 0px 10px #1c18f5; /* Applies a shadow 2 pixels to the right and bottom with a blur radius of 6 pixels and a light opacity */            font-family: 'Arial', sans-serif; /* Sets the font to Arial with a fallback to any available sans-serif font */         font-size: 20px; /* Sets the font size to 14 pixels */            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smoothly animates changes to the background color and box-shadow properties over 0.3 seconds */
                 border: 2px solid #ccc; /* Creates a 2-pixel solid border with a light gray color (#ccc) */
                 border-radius: 10px; /* Rounds the corners of the element with a 15-pixel radius */
                 background-color: #3F9EED; /* Sets the background color to a shade of blue (#3F9EED) */
